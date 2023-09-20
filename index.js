@@ -34,8 +34,6 @@ const search = (input = '') => {
 				const id = parse(RES.filePath).name;
 				const episode = getEpisode(id);
 				FOUND_IDS.add(id);
-				// OUTPUT.push(new Separator());
-				// OUTPUT.push(new Separator(`${episode}`));
 				OUTPUT.push({
 					name: episode,
 					value: {
