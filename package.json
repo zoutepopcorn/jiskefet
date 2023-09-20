@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "jiskefet",
   "version": "1.0.0",
-  "description": "",
+  "description": "tool om Jiskefet teksten te zoeken op Youtube",
   "main": "index.js",
   "type": "module",
   "license": "AGPL-version-3.0",
@@ -16,7 +16,7 @@
   "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/zoutepopcorn/jiskefet"
   },
   "bugs": "",
   "keywords": [],

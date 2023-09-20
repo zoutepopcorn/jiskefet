@@ -627,13 +627,24 @@ const getEpisode = (id) => {
     return EPISODES[id];
 }
 
-const findEpisode = (search) => {
+const findEpisode = (search, ignore) => {
 	const OUTPUT = [];
-	for(const EPISODE of Object.entries(EPISODES)) {
-
+	for(const [key, episode] of Object.entries(EPISODES)) {
+		if(!ignore.has(key), episode.toLowerCase().indexOf(search) > -1) {
+			OUTPUT.push({
+				name: episode,
+				value: {
+					id: key,
+					line: episode
+				}
+			});
+		}
 	}
+	// console.log(OUTPUT);
+	return OUTPUT;
 }
 
 export {
-	getEpisode
+	getEpisode,
+	findEpisode
 }
